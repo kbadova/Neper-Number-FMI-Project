@@ -13,7 +13,7 @@ urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
 
-    url(r'^rsa/', CalculateNeperNumberView.as_view(), name='culculations'),
+    url(r'^rsa/', CalculateNeperNumberView.as_view(), name='culculation'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

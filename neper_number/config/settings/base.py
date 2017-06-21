@@ -36,6 +36,7 @@ DJANGO_APPS = [
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'neper_number',
 
     # Useful template tags:
     # 'django.contrib.humanize',
