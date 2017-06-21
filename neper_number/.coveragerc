@@ -1,0 +1,5 @@
+[run]
+include = neper_number/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin

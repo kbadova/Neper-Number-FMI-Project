@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Calculating neper number{% endblock %}
+
+{% block content %}
+<h1> Helo</h1>
+<div class="row">
+  <div class="col-md-6">
+    <form method="POST">
+      {% csrf_token %}
+      {{form}}
+
+      <button class="btn btn-primary btn-outline" type="submit">Create</button>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}
+
+
