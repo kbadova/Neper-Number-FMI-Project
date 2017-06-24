@@ -20,11 +20,11 @@ Implementing spreading the calculation of neper number into threads.
   ### Use the interface at the upper url
   ### Execute the program by:
 ```
-   cd neper_numer/management/commands && python3 neper_number.py -p 1000 -t 6 -q=True -o result2.txt
+   cd neper_numer/management/commands && python3 neper_number.py -p 1000 -t 14 -q=True -o 14_threads_per_1000_members_results.txt
 ```
 #### Expected result is:
 ```
-     Members - 1000, Threads - 14, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+     Members - 1000, Threads - 14, Output_name - 14_threads_per_1000_members_results.txt, Quiet mode - False
      Executing start time is 16:20:47.025409
      Thread 1 started
      Thread 2 started
