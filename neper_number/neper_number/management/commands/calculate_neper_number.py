@@ -8,6 +8,8 @@ from django.core.management.base import BaseCommand
 class Command(BaseCommand):
     help = """Calculates the neper number"""
 
+    written_msg = ''
+
     def print(self, obj):
         self.stdout.write(str(obj))
 
@@ -48,12 +50,8 @@ class Command(BaseCommand):
         res = Queue()
 
         def calculate_member(k, res):
-            print(" k is {}".format(k))
             member_res = ((3 * k) * (3 * k) + 1) / math.factorial(3 * k)
             res.put(member_res)
-            print(" res is {}".format(res))
-
-            print("member is {}".format(member_res))
 
         separated_work = self.generate_work_per_thread(members, threads)
 
@@ -62,10 +60,16 @@ class Command(BaseCommand):
                 p = Process(target=calculate_member,
                             args=(k, res))
                 p.start()
-            print("Thread {} started".format(t))
+
+            msg = "Thread {} started".format(t + 1)
+            print(msg)
+            self.written_msg += msg + '\n'
 
         neper_number = sum([res.get() for _ in range(0, members)])
-        print("Neper number is {}".format(neper_number))
+        msg = "Calculated neper number is {}".format(neper_number)
+        self.written_msg += msg + '\n'
+        print(msg)
+        return neper_number
 
     def handle(self, *args, **options):
         members = options.get('p')
@@ -73,21 +77,33 @@ class Command(BaseCommand):
         output_name = options.get('o')
         quiet_mode = options.get('q')
 
+        msg = "Members - {}, Threads- {}, Output_name - {}, Quiet mode - {}".\
+            format(members, threads, output_name, quiet_mode)
+        self.written_msg += msg + '\n'
+
         start_time = datetime.datetime.now()
         stringed_start_time = start_time.time().isoformat()
-        print("Executing start time is {}".format(stringed_start_time))
+        msg = "Executing start time is {}".format(stringed_start_time)
+        print(msg)
+        self.written_msg += msg + '\n'
 
-        result = self.calculate_row_sum(members, threads)
+        self.calculate_row_sum(members, threads)
 
         end_time = datetime.datetime.now()
         stringed_end_time = end_time.time().isoformat()
 
-        print("Executing end time is {}".format(stringed_end_time))
+        msg = "Executing end time is {}".format(stringed_end_time)
+        print(msg)
+        self.written_msg += msg + '\n'
 
         time_taken = (end_time - start_time).total_seconds()
 
-        print("Total executing time is {}".format(time_taken))
-        print("result is {}".format(result))
+        msg = "Total executing time is {}".format(time_taken)
+        print(msg)
+        if quiet_mode:
+            self.written_msg = msg
+        else:
+            self.written_msg += msg + '\n'
 
-        print(" {} members, {} threads, {} output_name, {}queet mode".format(members, threads, output_name, quiet_mode))
-        print("here we implement the algorithm")
+        with open(output_name, 'a') as f:
+            f.write(self.written_msg)
