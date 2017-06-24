@@ -1,0 +1,350 @@
+Members - 1000, Threads - 1, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:19:42.424871
+Thread 1 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:19:43.152650
+Total executing time is 0.727779
+
+
+Members - 1000, Threads - 2, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:19:46.580275
+Thread 1 started
+Thread 2 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:19:47.311355
+Total executing time is 0.73108
+
+
+Members - 1000, Threads - 3, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:19:49.931817
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:19:50.702313
+Total executing time is 0.770496
+
+
+Members - 1000, Threads - 4, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:19:54.763018
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:19:56.307120
+Total executing time is 1.544102
+
+
+Members - 1000, Threads - 5, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:00.495345
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:01.992532
+Total executing time is 1.497187
+
+
+Members - 1000, Threads - 6, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:05.325847
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:06.915858
+Total executing time is 1.590011
+
+
+Members - 1000, Threads - 7, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:10.208390
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:11.679258
+Total executing time is 1.470868
+
+
+Members - 1000, Threads - 8, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:15.475424
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:16.998088
+Total executing time is 1.522664
+
+
+Members - 1000, Threads - 9, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:20.257993
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:21.818791
+Total executing time is 1.560798
+
+
+Members - 1000, Threads - 10, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:25.902304
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:27.187559
+Total executing time is 1.285255
+
+
+Members - 1000, Threads - 11, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:31.505930
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:33.024649
+Total executing time is 1.518719
+
+
+Members - 1000, Threads - 12, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:36.629519
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:38.007114
+Total executing time is 1.377595
+
+
+Members - 1000, Threads - 13, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:41.444365
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:42.188967
+Total executing time is 0.744602
+
+
+Members - 1000, Threads - 14, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:47.025409
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:47.782239
+Total executing time is 0.75683
+
+
+Members - 1000, Threads - 15, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:51.668907
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:52.424560
+Total executing time is 0.755653
+
+
+Members - 1000, Threads - 16, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:20:58.697702
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Thread 16 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:20:59.408083
+Total executing time is 0.710381
+
+
+Members - 1000, Threads - 17, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:21:04.988331
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Thread 16 started
+Thread 17 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:21:05.758626
+Total executing time is 0.770295
+
+
+Members - 1000, Threads - 18, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:21:09.031501
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Thread 16 started
+Thread 17 started
+Thread 18 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:21:10.581921
+Total executing time is 1.55042
+
+
+Members - 1000, Threads - 19, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:21:15.072703
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Thread 16 started
+Thread 17 started
+Thread 18 started
+Thread 19 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:21:16.735433
+Total executing time is 1.66273
+
+
+Members - 1000, Threads - 20, Output_name - 20_threads_per_1000_members_results.txt, Quiet mode - False
+Executing start time is 16:21:20.993790
+Thread 1 started
+Thread 2 started
+Thread 3 started
+Thread 4 started
+Thread 5 started
+Thread 6 started
+Thread 7 started
+Thread 8 started
+Thread 9 started
+Thread 10 started
+Thread 11 started
+Thread 12 started
+Thread 13 started
+Thread 14 started
+Thread 15 started
+Thread 16 started
+Thread 17 started
+Thread 18 started
+Thread 19 started
+Thread 20 started
+Calculated neper number is 2.71828182846
+Executing end time is 16:21:22.498704
+Total executing time is 1.504914
+
+
