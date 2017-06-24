@@ -14,3 +14,11 @@ Implementing spreading the calculation of neper number into threads.
  python3 manage.py runserver
  go to localhost:8000/rsa to see the result
  ```
+ 
+ ## You can either test how effective the calculation is either by:
+
+  * Use the interface at the upper url
+  * Execute the program by:
+ ```
+   cd neper_numer/management/commands && python3 neper_number.py -p 100 -t 6 -q=True -o result2.txt
+```
