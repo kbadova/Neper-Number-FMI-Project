@@ -1,6 +1,7 @@
 import math
 import argparse
 import datetime
+from decimal import Decimal
 from multiprocessing import Process, Queue
 
 parser = argparse.ArgumentParser(description='Calculating neper number.')
@@ -52,7 +53,9 @@ def calculate_row_sum(members, threads):
     res = Queue()
 
     def calculate_member(k, res):
-        member_res = ((3 * k) * (3 * k) + 1) / math.factorial(3 * k)
+        # In python2 22/22222 -> 0
+
+        member_res = float(((3 * k) * (3 * k) + 1) / Decimal(math.factorial(3 * k)))
         res.put(member_res)
 
     separated_work = generate_work_per_thread(members, threads)
@@ -64,27 +67,23 @@ def calculate_row_sum(members, threads):
             p.start()
 
         msg = "Thread {} started".format(t + 1)
-        print(msg)
         written_msg += msg + '\n'
 
     neper_number = sum([res.get() for _ in range(0, members)])
     msg = "Calculated neper number is {}".format(neper_number)
     written_msg += msg + '\n'
-    print(msg)
     return neper_number
 
 
 def main():
-    print("i am here")
     global written_msg
-    msg = "Members - {}, Threads- {}, Output_name - {}, Quiet mode - {}".\
+    msg = "Members - {}, Threads - {}, Output_name - {}, Quiet mode - {}".\
         format(members, threads, output_name, quiet_mode)
     written_msg += msg + '\n'
 
     start_time = datetime.datetime.now()
     stringed_start_time = start_time.time().isoformat()
     msg = "Executing start time is {}".format(stringed_start_time)
-    print(msg)
     written_msg += msg + '\n'
 
     calculate_row_sum(members, threads)
@@ -93,20 +92,18 @@ def main():
     stringed_end_time = end_time.time().isoformat()
 
     msg = "Executing end time is {}".format(stringed_end_time)
-    print(msg)
     written_msg += msg + '\n'
 
     time_taken = (end_time - start_time).total_seconds()
 
     msg = "Total executing time is {}".format(time_taken)
-    print(msg)
     if quiet_mode:
         written_msg = msg
     else:
         written_msg += msg + '\n'
 
     with open(output_name, 'a') as f:
-        f.write(written_msg)
+        f.write(written_msg + '\n' + '\n')
 
 
 if __name__ == '__main__':

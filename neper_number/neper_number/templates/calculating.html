@@ -1,20 +1,20 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Calculating neper number{% endblock %}
 
 {% block content %}
-<h1> Helo</h1>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-offset-3 col-md-6">
+    <h1> Calculate neper number </h1>
     <form method="POST">
       {% csrf_token %}
-      {{form}}
+      {{form|crispy}}
 
       <button class="btn btn-primary btn-outline" type="submit">Create</button>
     </form>
   </div>
 </div>
-
 {% endblock content %}
 
 

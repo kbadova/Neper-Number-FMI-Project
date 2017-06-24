@@ -62,13 +62,11 @@ class Command(BaseCommand):
                 p.start()
 
             msg = "Thread {} started".format(t + 1)
-            print(msg)
             self.written_msg += msg + '\n'
 
         neper_number = sum([res.get() for _ in range(0, members)])
         msg = "Calculated neper number is {}".format(neper_number)
         self.written_msg += msg + '\n'
-        print(msg)
         return neper_number
 
     def handle(self, *args, **options):
@@ -84,7 +82,6 @@ class Command(BaseCommand):
         start_time = datetime.datetime.now()
         stringed_start_time = start_time.time().isoformat()
         msg = "Executing start time is {}".format(stringed_start_time)
-        print(msg)
         self.written_msg += msg + '\n'
 
         self.calculate_row_sum(members, threads)
@@ -93,17 +90,15 @@ class Command(BaseCommand):
         stringed_end_time = end_time.time().isoformat()
 
         msg = "Executing end time is {}".format(stringed_end_time)
-        print(msg)
         self.written_msg += msg + '\n'
 
         time_taken = (end_time - start_time).total_seconds()
 
         msg = "Total executing time is {}".format(time_taken)
-        print(msg)
         if quiet_mode:
             self.written_msg = msg
         else:
             self.written_msg += msg + '\n'
 
         with open(output_name, 'a') as f:
-            f.write(self.written_msg)
+            f.write(self.written_msg + '\n' + '\n')
