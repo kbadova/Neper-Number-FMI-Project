@@ -75,7 +75,7 @@ class Command(BaseCommand):
         output_name = options.get('o')
         quiet_mode = options.get('q')
 
-        msg = "Members - {}, Threads- {}, Output_name - {}, Quiet mode - {}".\
+        msg = "Members - {}, Threads - {}, Output_name - {}, Quiet mode - {}".\
             format(members, threads, output_name, quiet_mode)
         self.written_msg += msg + '\n'
 
@@ -102,3 +102,5 @@ class Command(BaseCommand):
 
         with open(output_name, 'a') as f:
             f.write(self.written_msg + '\n' + '\n')
+
+        return self.written_msg
